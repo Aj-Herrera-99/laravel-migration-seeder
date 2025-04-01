@@ -11,10 +11,14 @@ class PageController extends Controller
     public function index()
     {
         $trains = Train::all();
-        // $trainsOrdered = Train::orderBy('train_code')->get();
-
-        // dd([$trains, $trainsOrdered]);
 
         return view('index', compact('trains'));
+    }
+
+    public function getTrainsByTime()
+    {
+        $is_chrono = true;
+        $trains = Train::orderBy('arrival_time')->get();
+        return view('index', compact('trains', 'is_chrono'));
     }
 }
