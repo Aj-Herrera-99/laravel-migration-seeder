@@ -11,7 +11,6 @@
         "vite": "^5.0"
     },
     "dependencies": {
-        "@tailwindcss/vite": "^4.0.17",
-        "tailwind-scrollbar": "^4.0.2"
+        "@tailwindcss/vite": "^4.0.17"
     }
 }
