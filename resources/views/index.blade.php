@@ -5,12 +5,17 @@
 @section('content')
 
     @if (!isset($is_chrono))
+        <h4 class="uppercase text-red-600 text-xl">attenzione!</h4>
         <p class="mb-2">La seguente tabella non tiene l'ordine cronologico -> clicca <a href={{ route('page2') }}
-                class="underline underline-offset-2">qui</a> per ottenere l'ordine corretto
+                class="underline underline-offset-4 hover:text-amber-600">qui</a> per ottenere l'ordine corretto
+        </p>
+    @else
+        <p class="mb-2">Clicca <a href="/" class="underline underline-offset-4 hover:text-amber-600">qui</a> per
+            tornare alle impostazioni iniziali
         </p>
     @endif
 
-    <table class="uppercase text-3xl font-semibold tracking-wider w-full bg-[#1e2128] rounded-md overflow-hidden">
+    <table class="uppercase text-3xl w-full bg-[#1e2128] rounded-md overflow-hidden">
         <thead class="[&_th]:text-start">
             <tr>
                 <th class="col-span-2 p-2">time</th>

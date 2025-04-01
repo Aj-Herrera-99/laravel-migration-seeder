@@ -11,10 +11,10 @@
     <title>@yield('title')</title>
 </head>
 
-<body>
+<body class="scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300">
     @include('partials.navbar')
 
-    <div class="ml-[15%] relative">
+    <div class="ml-[20%] relative">
         @include('partials.header')
         <main class="p-12">
             
